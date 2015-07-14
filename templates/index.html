@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Compare</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<form method="POST">
+		<h2>Compare Two Images</h2>
+		
+		Enter URL for two images-<hr/>
+		First Image: 
+		<input type="text" name="img1" placeholder="First image link" value="{{ img1 }}" required><br/>
+		Second Image:
+		<input type="text" name="img2" placeholder="Second image link" value="{{ img2 }}" required><br/>
+		<button>Compare</button>
+		
+		{% if val %}
+			<p>The images are <strong>{{ val }}%</strong> similar</p>
+		{% endif %}
+	</form>
+	
+	
+</body>
+</html>
