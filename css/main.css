@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  max-width: 50%;
+}
+
+input {
+    width: 250px;
+    margin-bottom: 5px;
+}
